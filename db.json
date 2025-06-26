@@ -2,48 +2,33 @@
   "employees": [
     {
       "id": 1,
-      "name": "Admin",
+      "name": "Alice",
       "sap": "SAP001",
-      "pin": "0000"
+      "pin": "1234",
+      "isAdmin": false
     },
     {
       "id": 2,
-      "name": "Alice Wanjiku",
+      "name": "Bob",
       "sap": "SAP002",
-      "pin": "1111"
+      "pin": "5678",
+      "isAdmin": false
     },
     {
       "id": 3,
-      "name": "John Otieno",
-      "sap": "SAP003",
-      "pin": "2222"
-    },
-    {
-      "id": 4,
-      "name": "Grace Mwende",
-      "sap": "SAP004",
-      "pin": "3333"
-    },
-    {
-      "id": 5,
-      "name": "Brian Kipkoech",
-      "sap": "SAP005",
-      "pin": "4444"
+      "name": "Admin",
+      "sap": "ADMIN001",
+      "pin": "admin123",
+      "isAdmin": true
     }
   ],
-  "attendance": [],
-  "loggedInEmployees": [
+  "attendance": [
     {
-      "id": 1,
-      "name": "Admin",
-      "sap": "SAP001",
-      "pin": "0000"
-    },
-    {
-      "id": 2,
-      "name": "Alice Wanjiku",
-      "sap": "SAP002",
-      "pin": "1111"
+      "id": "71ff",
+      "employeeId": 2,
+      "date": "2025-06-26",
+      "meal": "Jollof Rice",
+      "mealTime": "Lunch"
     }
   ]
 }
