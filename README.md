@@ -59,7 +59,7 @@ git clone https://github.com/your-username/employee-meal-checkin.git
 cd employee-meal-checkin
 ```
 
-### 2. Install JSON Server (if not already)
+### 2. Install JSON Server 
 
 ```bash
 npm install -g json-server
@@ -116,6 +116,6 @@ Open `index.html` in your browser.
 ## Author
 Birundu Gloria.
 
-## 📄 License
+##  License
 
 This project is open-source and available under the MIT License.
