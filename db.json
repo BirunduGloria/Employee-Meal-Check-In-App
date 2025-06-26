@@ -1,0 +1,49 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "sap": "SAP001",
+      "pin": "0000"
+    },
+    {
+      "id": 2,
+      "name": "Alice Wanjiku",
+      "sap": "SAP002",
+      "pin": "1111"
+    },
+    {
+      "id": 3,
+      "name": "John Otieno",
+      "sap": "SAP003",
+      "pin": "2222"
+    },
+    {
+      "id": 4,
+      "name": "Grace Mwende",
+      "sap": "SAP004",
+      "pin": "3333"
+    },
+    {
+      "id": 5,
+      "name": "Brian Kipkoech",
+      "sap": "SAP005",
+      "pin": "4444"
+    }
+  ],
+  "attendance": [],
+  "loggedInEmployees": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "sap": "SAP001",
+      "pin": "0000"
+    },
+    {
+      "id": 2,
+      "name": "Alice Wanjiku",
+      "sap": "SAP002",
+      "pin": "1111"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Meal Check-In</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>Meal Check-In App</h1>
+    <div id="login-container">
+      <input type="text" id="sap-input" placeholder="SAP Number" />
+      <input type="password" id="pin-input" placeholder="PIN" />
+      <button id="login-btn">Login</button>
+      <button id="logout-btn" hidden>Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="checkin-form" hidden>
+      <h2>Meal Check-In</h2>
+      <select id="meal-select">
+        <option value="Jollof Rice">Jollof Rice</option>
+        <option value="Pasta">Pasta</option>
+        <option value="Swallow">Swallow</option>
+        <option value="Githeri">Githeri</option>
+      </select>
+
+      <select id="meal-time-select">
+        <option value="Lunch">Lunch</option>
+        <option value="Dinner">Dinner</option>
+      </select>
+
+      <button id="submit-checkin">Submit Check-In</button>
+    </section>
+
+    <section id="meal-history" hidden>
+      <h2>My Meal History</h2>
+      <ul id="meal-history-list"></ul>
+    </section>
+
+    <section id="logged-users">
+      <h2>Logged-in Employees</h2>
+      <ul id="logged-in-list"></ul>
+      <button id="print-btn">Print List</button>
+      <button id="email-btn">Email HR</button>
+    </section>
+
+    <section id="admin-panel" hidden>
+      <h2>Admin Panel</h2>
+      <div id="admin-filters">
+        <label for="filter-employee">Employee:</label>
+        <select id="filter-employee">
+          <option value="">All</option>
+        </select>
+
+        <label for="filter-date">Date:</label>
+        <input type="date" id="filter-date" />
+
+        <button id="apply-filters">Apply Filters</button>
+        <button id="clear-filters">Clear</button>
+      </div>
+
+      <div id="admin-records"></div>
+    </section>
+  </main>
+
+  <script src="src/index.js"></script>
+</body>
+</html>
