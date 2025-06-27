@@ -1,38 +1,178 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+/* Reset & Base Styles */
+* {
   margin: 0;
-  padding: 1rem;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #007acc;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  color: #333;
+  padding: 2rem;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* Layout Containers */
+#login-section,
+#employee-section,
+#admin-panel,
+#today-checkins,
+#history-panel {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Inputs & Selects */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
   color: white;
-  padding: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-1px);
+}
+
+#logout-btn,
+#clear-filters {
+  background-color: #e74c3c;
+}
+
+#logout-btn:hover,
+#clear-filters:hover {
+  background-color: #c0392b;
+}
+
+#export-pdf {
+  background-color: #27ae60;
+}
+
+#export-pdf:hover {
+  background-color: #1e8449;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f0f4f8;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-input, select, button {
-  margin: 0.5rem;
-  padding: 0.5rem;
+/* Admin Edit/Delete Buttons */
+li button {
+  margin-left: 0.5rem;
+  background-color: #bdc3c7;
+  color: #2c3e50;
+}
+
+li button:hover {
+  background-color: #95a5a6;
+}
+
+/* Admin Badge */
+#admin-badge {
   font-size: 1rem;
+  margin-top: 1rem;
 }
 
-button {
-  cursor: pointer;
+/* Toggle Dark Mode */
+#toggle-dark-mode {
+  float: right;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  background-color: #555;
 }
 
-section {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+#toggle-dark-mode:hover {
+  background-color: #333;
 }
 
-#logged-in-list, #meal-history-list {
-  list-style: none;
-  padding: 0;
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode button {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
+
+body.dark-mode li {
+  background-color: #2b2b2b;
+  color: #f1f1f1;
+}
+
+body.dark-mode #login-section,
+body.dark-mode #employee-section,
+body.dark-mode #admin-panel,
+body.dark-mode #today-checkins,
+body.dark-mode #history-panel {
+  background-color: #1a1a1a;
+  border-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  #toggle-dark-mode {
+    float: none;
+    width: 100%;
+  }
 }
