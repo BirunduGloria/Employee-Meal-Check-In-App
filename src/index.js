@@ -1,4 +1,5 @@
-const API = "http://localhost:3001";
+const API = "https://json-server-4866.onrender.com";
+
 let currentUser = null;
 
 document.addEventListener("DOMContentLoaded", () => {
