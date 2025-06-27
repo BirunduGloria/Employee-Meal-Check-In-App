@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Employee Meal Check-In</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-
   <h1>Employee Meal Check-In</h1>
 
   <!-- Login Section -->
@@ -15,52 +14,41 @@
     <input type="text" id="sap-input" placeholder="SAP Number" />
     <input type="password" id="pin-input" placeholder="PIN" />
     <button id="login-btn">Login</button>
-    <button id="quick-admin-login">Switch to Admin</button>
+
+    <!-- ✅ Added Quick Admin Login Button -->
+    <button id="quick-admin-login">Quick Admin Login</button>
   </div>
 
-  <!-- ✅ Admin badge -->
+  <!-- Admin Badge -->
   <p id="admin-badge" style="display: none; color: green; font-weight: bold;">✅ Logged in as Admin</p>
 
-  <!-- ✅ Employee Section -->
+  <!-- Employee Section -->
   <div id="employee-section" style="display: none;">
-    <div id="checkin-form">
-      <h2>Select Your Meal</h2>
+    <h2>Select Your Meal</h2>
 
-      <label for="meal-select">Meal:</label>
-      <select id="meal-select">
-        <option value="Jollof Rice">Jollof Rice</option>
-        <option value="Pasta">Pasta</option>
-        <option value="Swallow">Swallow</option>
-        <option value="Githeri">Githeri</option>
-      </select>
+    <label for="meal-select">Meal:</label>
+    <select id="meal-select">
+      <option value="Jollof Rice">Jollof Rice</option>
+      <option value="Pasta">Pasta</option>
+      <option value="Swallow">Swallow</option>
+      <option value="Githeri">Githeri</option>
+    </select>
 
-      <label for="meal-time-select">Meal Type:</label>
-      <select id="meal-time-select">
-        <option value="Lunch">Lunch</option>
-        <option value="Dinner">Dinner</option>
-      </select>
+    <label for="meal-time-select">Meal Time:</label>
+    <select id="meal-time-select">
+      <option value="Lunch">Lunch</option>
+      <option value="Dinner">Dinner</option>
+    </select>
 
-      <button id="submit-checkin">Submit Check-In</button>
-      <button id="logout-btn">Logout</button>
-    </div>
+    <button id="submit-checkin">Submit Check-In</button>
+    <button id="logout-btn">Logout</button>
   </div>
 
-  <!-- ✅ Today's Check-Ins -->
-  <div id="today-checkins">
-    <h2>Today's Check-Ins</h2>
-    <ul id="checkin-list"></ul>
-  </div>
-
-  <!-- ✅ Daily History -->
-  <div id="history-panel">
-    <h2>Daily Check-In History</h2>
-    <ul id="daily-history"></ul>
-  </div>
-
-  <!-- ✅ Admin Panel -->
+  <!-- Admin Panel -->
   <div id="admin-panel" style="display: none;">
     <h2>Admin Panel</h2>
 
+    <!-- Check-in Filter -->
     <label for="filter-employee">Filter by Employee:</label>
     <input type="text" id="filter-employee" placeholder="Enter employee name">
 
@@ -68,11 +56,40 @@
     <input type="date" id="filter-date">
 
     <button id="clear-filters">Clear Filters</button>
-    <button id="export-pdf">Export to PDF</button>
-
     <ul id="filtered-checkins"></ul>
+
+    <!-- Employee Management -->
+    <div id="employee-management">
+      <h3>Manage Employees</h3>
+
+      <!-- New Employee Form -->
+      <input type="text" id="new-name" placeholder="Name" />
+      <input type="text" id="new-sap" placeholder="SAP Number" />
+      <input type="password" id="new-pin" placeholder="PIN" />
+      <label><input type="checkbox" id="new-admin"> Admin</label>
+      <button id="add-employee">Add Employee</button>
+
+      <!-- Employee Search -->
+      <input type="text" id="search-employee" placeholder="Search employees..." />
+      <ul id="employee-list"></ul>
+    </div>
+
+    <button id="logout-btn-admin">Logout</button>
   </div>
 
-  <script src="src/index.js"></script>
+  <!-- Today's Check-Ins -->
+  <div id="today-checkins">
+    <h2>Today's Check-Ins</h2>
+    <ul id="checkin-list"></ul>
+  </div>
+
+  <!-- Daily History -->
+  <div id="history-panel">
+    <h2>Daily Check-In History</h2>
+    <ul id="daily-history"></ul>
+  </div>
+
+  <!-- JS File -->
+  <script src="./src/index.js"></script>
 </body>
 </html>

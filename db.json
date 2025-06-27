@@ -1,21 +1,118 @@
 {
   "employees": [
-    { "id": 1, "name": "Alice Wambui", "sap": "EMP001", "pin": "1111", "isAdmin": false },
-    { "id": 2, "name": "Brian Otieno", "sap": "EMP002", "pin": "2222", "isAdmin": false },
-    { "id": 3, "name": "Cynthia Mwangi", "sap": "EMP003", "pin": "3333", "isAdmin": false },
-    { "id": 4, "name": "Daniel Mutiso", "sap": "EMP004", "pin": "4444", "isAdmin": false },
-    { "id": 5, "name": "Eunice Ndungu", "sap": "EMP005", "pin": "5555", "isAdmin": false },
-    { "id": 6, "name": "Felix Kamau", "sap": "EMP006", "pin": "6666", "isAdmin": false },
-    { "id": 7, "name": "Grace Njeri", "sap": "EMP007", "pin": "7777", "isAdmin": false },
-    { "id": 8, "name": "Henry Ochieng", "sap": "EMP008", "pin": "8888", "isAdmin": false },
-    { "id": 9, "name": "Ivy Achieng", "sap": "EMP009", "pin": "9999", "isAdmin": false },
-    { "id": 10, "name": "Admin User", "sap": "ADMIN001", "pin": "admin002", "isAdmin": true }
+    {
+      "id": "1",
+      "name": "Alice Wambui",
+      "sap": "EMP001",
+      "pin": "1111",
+      "isAdmin": false
+    },
+    {
+      "id": "2",
+      "name": "Brian Otieno",
+      "sap": "EMP002",
+      "pin": "2222",
+      "isAdmin": false
+    },
+    {
+      "id": "3",
+      "name": "Cynthia Mwangi",
+      "sap": "EMP003",
+      "pin": "3333",
+      "isAdmin": false
+    },
+    {
+      "id": "4",
+      "name": "Daniel Mutiso",
+      "sap": "EMP004",
+      "pin": "4444",
+      "isAdmin": false
+    },
+    {
+      "id": "5",
+      "name": "Eunice Ndungu",
+      "sap": "EMP005",
+      "pin": "5555",
+      "isAdmin": false
+    },
+    {
+      "id": "6",
+      "name": "Felix Kamau",
+      "sap": "EMP006",
+      "pin": "6666",
+      "isAdmin": false
+    },
+    {
+      "id": "7",
+      "name": "Grace Njeri",
+      "sap": "EMP007",
+      "pin": "7777",
+      "isAdmin": false
+    },
+    {
+      "id": "8",
+      "name": "Henry Ochieng",
+      "sap": "EMP008",
+      "pin": "8888",
+      "isAdmin": false
+    },
+    {
+      "id": "9",
+      "name": "Ivy Achieng",
+      "sap": "EMP009",
+      "pin": "9999",
+      "isAdmin": false
+    },
+    {
+      "id": "10",
+      "name": "Admin User",
+      "sap": "ADMIN001",
+      "pin": "admin002",
+      "isAdmin": true
+    }
   ],
   "attendance": [
-    { "id": 1, "employeeId": 1, "date": "2025-06-27", "meal": "Swallow", "mealTime": "Lunch" },
-    { "id": 2, "employeeId": 2, "date": "2025-06-27", "meal": "Pasta", "mealTime": "Dinner" },
-    { "id": 3, "employeeId": 3, "date": "2025-06-27", "meal": "Githeri", "mealTime": "Lunch" },
-    { "id": 4, "employeeId": 5, "date": "2025-06-26", "meal": "Jollof Rice", "mealTime": "Lunch" },
-    { "id": 5, "employeeId": 7, "date": "2025-06-25", "meal": "Swallow", "mealTime": "Dinner" }
+    {
+      "id": "2",
+      "employeeId": 2,
+      "date": "2025-06-27",
+      "meal": "Pasta",
+      "mealTime": "Dinner"
+    },
+    {
+      "id": "3",
+      "employeeId": 3,
+      "date": "2025-06-27",
+      "meal": "Githeri",
+      "mealTime": "Lunch"
+    },
+    {
+      "id": "4",
+      "employeeId": 5,
+      "date": "2025-06-26",
+      "meal": "Jollof Rice",
+      "mealTime": "Lunch"
+    },
+    {
+      "id": "5",
+      "employeeId": 7,
+      "date": "2025-06-25",
+      "meal": "Swallow",
+      "mealTime": "Dinner"
+    },
+    {
+      "id": "bef0",
+      "employeeId": "10",
+      "date": "2025-06-27",
+      "meal": "Jollof Rice",
+      "mealTime": "Lunch"
+    },
+    {
+      "id": "46db",
+      "employeeId": "1",
+      "date": "2025-06-27",
+      "meal": "Jollof Rice",
+      "mealTime": "Lunch"
+    }
   ]
 }
