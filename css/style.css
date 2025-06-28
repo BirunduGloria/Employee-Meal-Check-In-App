@@ -1,178 +1,80 @@
-/* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f7f9fc;
-  color: #333;
-  padding: 2rem;
-  line-height: 1.6;
-  transition: background-color 0.3s, color 0.3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Segoe UI', sans-serif;
+  color: black;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-h1, h2 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
+header {
+  margin-top: 20px;
 }
 
-/* Layout Containers */
-#login-section,
-#employee-section,
-#admin-panel,
-#today-checkins,
-#history-panel {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+.company-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 }
 
-/* Form Inputs & Selects */
-input[type="text"],
-input[type="password"],
-input[type="date"],
-select {
+.app-title {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+.panel {
+  background-color:blue(0, 0, 0, 0.6);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px :blue(0,0,0,0.5);
+}
+
+input, select, button {
+  display: block;
   width: 100%;
-  padding: 0.6rem;
-  margin: 0.5rem 0 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border 0.3s;
-}
-
-input:focus,
-select:focus {
-  border-color: #3498db;
-  outline: none;
-}
-
-/* Buttons */
-button {
-  padding: 0.6rem 1.2rem;
-  background-color: #3498db;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
   border: none;
-  border-radius: 5px;
-  color: white;
+}
+
+button {
+  background-color: green;
+  color: yellow;
   cursor: pointer;
-  margin-right: 0.5rem;
-  transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-  background-color: #2980b9;
-  transform: translateY(-1px);
+  background-color: #2e066f;
 }
 
-#logout-btn,
-#clear-filters {
-  background-color: #e74c3c;
+#admin-badge {
+  font-weight: bold;
+  color: #90ee90;
+  margin: 10px 0;
 }
 
-#logout-btn:hover,
-#clear-filters:hover {
-  background-color: #c0392b;
-}
-
-#export-pdf {
-  background-color: #27ae60;
-}
-
-#export-pdf:hover {
-  background-color: #1e8449;
-}
-
-/* Lists */
 ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
 }
 
-li {
-  background: #f0f4f8;
-  margin-bottom: 0.75rem;
-  padding: 0.75rem 1rem;
+ul li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  margin-bottom: 6px;
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-/* Admin Edit/Delete Buttons */
-li button {
-  margin-left: 0.5rem;
-  background-color: #bdc3c7;
-  color: #2c3e50;
-}
-
-li button:hover {
-  background-color: #95a5a6;
-}
-
-/* Admin Badge */
-#admin-badge {
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-
-/* Toggle Dark Mode */
-#toggle-dark-mode {
-  float: right;
-  margin-top: -2rem;
-  margin-bottom: 2rem;
-  background-color: #555;
-}
-
-#toggle-dark-mode:hover {
-  background-color: #333;
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #121212;
-  color: #f1f1f1;
-}
-
-body.dark-mode input,
-body.dark-mode select,
-body.dark-mode button {
-  background-color: #1e1e1e;
-  color: #f1f1f1;
-  border: 1px solid #444;
-}
-
-body.dark-mode li {
-  background-color: #2b2b2b;
-  color: #f1f1f1;
-}
-
-body.dark-mode #login-section,
-body.dark-mode #employee-section,
-body.dark-mode #admin-panel,
-body.dark-mode #today-checkins,
-body.dark-mode #history-panel {
-  background-color: #1a1a1a;
-  border-color: #333;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  body {
-    padding: 1rem;
-  }
-
-  button {
-    width: 100%;
-    margin-bottom: 0.5rem;
-  }
-
-  #toggle-dark-mode {
-    float: none;
-    width: 100%;
-  }
 }

@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Employee Meal Check-In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belani Manufacturers - Meal Check-In</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <h1>Employee Meal Check-In</h1>
+  <!-- Company Name -->
+  <header>
+    <h1 class="company-name">Belani Manufacturers</h1>
+  </header>
+
+  <!-- App Title -->
+  <h2 class="app-title">Employee Meal Check-In</h2>
 
   <!-- Login -->
-  <div id="login-section">
+  <div id="login-section" class="panel">
     <input id="sap-input" placeholder="SAP Number" />
     <input type="password" id="pin-input" placeholder="PIN" />
     <button id="login-btn">Login</button>
@@ -18,11 +24,11 @@
   </div>
 
   <!-- Admin Badge -->
-  <p id="admin-badge" style="display:none;color:green;font-weight:bold;">✅ Admin</p>
+  <p id="admin-badge" style="display:none;">✅ Admin</p>
 
   <!-- Employee Check-In -->
-  <div id="employee-section" style="display:none;">
-    <h2>Check-In</h2>
+  <div id="employee-section" class="panel" style="display:none;">
+    <h3>Check-In</h3>
     <select id="meal-select">
       <option value="Jollof Rice">Jollof Rice</option>
       <option value="Pasta">Pasta</option>
@@ -38,21 +44,15 @@
   </div>
 
   <!-- Admin Panel -->
-  <div id="admin-panel" style="display:none;">
-    <h2>Admin Panel</h2>
-
-    <!-- Add Employee -->
-    <h3>Add New Employee</h3>
+  <div id="admin-panel" class="panel" style="display:none;">
+    <h3>Admin Panel</h3>
     <input id="new-name" placeholder="Name" />
     <input id="new-sap" placeholder="SAP" />
     <input id="new-pin" placeholder="PIN" />
     <label><input type="checkbox" id="new-admin" /> Is Admin</label>
     <button id="add-employee">Add Employee</button>
-
-    <!-- Employee List -->
-    <h3>Employees</h3>
+    <h4>Employees</h4>
     <ul id="employee-list"></ul>
-
     <button id="logout-btn-admin">Logout</button>
   </div>
 
