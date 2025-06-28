@@ -6,22 +6,33 @@ This is a Single Page Application (SPA) built with HTML, CSS, and JavaScript tha
 
 ## 📌 Project Features
 
-- Employee login via SAP Number and PIN.
-- Secure check-in: each employee can only check in once per day.
-- Meal selection: choose from Jollof Rice, Pasta, Swallow, Githeri.
-- Choose meal time (Lunch or Dinner).
-- Displays:
-  - Today's check-ins
-  - Daily check-in history
-- Admin Panel:
-  - View all check-ins
-  - Filter by employee or date
-  - Edit or delete check-ins
-  - Export check-ins to PDF
-- Quick switch to Admin login with preset credentials.
-- Admin and employee views are separated.
+# 🍽️ Employee Meal Check-In App
+
+This is a **Single Page Application (SPA)** built with **HTML, CSS, and JavaScript**, designed to let employees check in for meals (Lunch/Dinner), while giving administrators access to manage records, view logs, and export data.
 
 ---
+
+## 🚀 Features
+
+### Employee Functionality
+
+- Log in with SAP number and PIN**
+- Select a meal and meal time
+- One check-in per day is enforced
+
+### Admin Panel
+
+- View all check-ins for the day
+- Filter by employee name and date
+- Edit or delete check-ins
+- Add new employees (and assign admin rights)
+- View complete **attendance history.
+
+---
+
+## 📁 Project Structure
+
+
 
 ## 🛠️ Tech Stack
 
@@ -114,6 +125,7 @@ Open `index.html` in your browser.
 ---
 
 ## Author
+
 Birundu Gloria.
 
 ##  License
