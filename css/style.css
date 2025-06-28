@@ -38,7 +38,7 @@ header {
   border-radius: 12px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 0 10px :blue(0,0,0,0.5);
+  box-shadow: 0 0 10px ;blue(0,0,0,0.5);
 }
 
 input, select, button {
