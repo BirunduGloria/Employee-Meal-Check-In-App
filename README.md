@@ -1,133 +1,77 @@
-# 🍽️ Employee Meal Check-In App
+# 🍽️ Belani Meal Check-In App
 
-This is a Single Page Application (SPA) built with HTML, CSS, and JavaScript that allows employees to check in for meals (Lunch/Dinner), and enables administrators to manage check-ins, view logs, and export data.
-
----
-
-## 📌 Project Features
-
-# 🍽️ Employee Meal Check-In App
-
-This is a **Single Page Application (SPA)** built with **HTML, CSS, and JavaScript**, designed to let employees check in for meals (Lunch/Dinner), while giving administrators access to manage records, view logs, and export data.
+> A simple, single-page web application that allows employees at **Belani Manufacturers** to check in for meals and enables admins to manage employee data.
 
 ---
 
-## 🚀 Features
+## 🧩 Project Overview
 
-### Employee Functionality
+This project is built as part of Phase 1 of a software development. It uses HTML, CSS, and JavaScript to build a SPA (Single Page Application) that interacts with a RESTful API to manage employee meal check-ins.
 
-- Log in with SAP number and PIN**
-- Select a meal and meal time
-- One check-in per day is enforced
+### ✨ Features
 
-### Admin Panel
-
-- View all check-ins for the day
-- Filter by employee name and date
-- Edit or delete check-ins
-- Add new employees (and assign admin rights)
-- View complete **attendance history.
+- ✅ Employee login using SAP Number and PIN  
+- 🕑 Time-based meal check-in (Lunch: 10–14, Dinner: 17–21)  
+- 🔐 Admin panel for managing employees  
+- 📋 Add, edit, and delete employee records  
+- 🚪 Auto-logout on check-in  
+- 🧠 Clear visual feedback and alerts  
+- 🎨 Responsive and modern UI  
 
 ---
 
-## 📁 Project Structure
+## 🚀 Live Demo
 
-
-
-## 🛠️ Tech Stack
-
-- Frontend:** HTML, CSS, JavaScript
-- Backend:** JSON Server (`db.json`)
-- Data Format:** JSON
-- API Communication:** Asynchronous (fetch API)
+- 🔗 [Live App on GitHub Pages](https://birundugloria.github.io/Employee-Meal-Check-In-App/)  
+- 🌐 [JSON Server on Render](https://json-server-4866.onrender.com/employees)
 
 ---
 
-## 🧩 Project Structure
-
-```bash
-project-root/Employee Meal Check-In
-│
-├── css/
-│   └── style.css
-│
-├── src/
-│   └── index.js
-│
-├── db.json
-├── index.html
-└── README.md
-```
-
----
-
-## ⚙️ Setup Instructions
+## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/employee-meal-checkin.git
-cd employee-meal-checkin
-```
+git clone https://github.com/BirunduGloria/Employee-Meal-Check-In-App.git
+cd employee-meal-check-in-app
 
-### 2. Install JSON Server 
+### 2. Serve the App
+Just open index.html in your browser.
 
-```bash
-npm install -g json-server
-```
+## 📂 Project Structure
+pgsql
+Copy
+Edit
+├── index.html
+├── css/
+│   └── style.css
+├── src/
+│   └── index.js
+├── README.md
+└── db.json 
 
-### 3. Run the JSON Server
 
-```bash
-json-server --watch db.json --port 3000
-```
+✅ Rubric Highlights
+✅ Single Page Application (SPA)
 
-### 4. Open the App
+✅ Uses public API (JSON Server hosted on Render)
 
-Open `index.html` in your browser.
+✅ Three+ Event Listeners (click, DOMContentLoaded, submit)
 
----
+✅ No redirects or page reloads
 
-##  Sample Admin Login
+✅ Includes admin-only features
 
-- **SAP: `ADMIN001`
-- **PIN: `admin002`
+✅ Well-structured, polished UI and code
 
----
+✅ Clear, valid HTML/CSS/JS
 
-## 🧪 Events & Array Methods Used
 
-- Event listeners for:
-  - Login
-  - Check-in
-  - Logout
-  - Filter by name and date
-  - Edit/Delete operations
-- Array methods:
-  - `forEach()` for displaying check-ins
-  - `find()` for locating users
-  - `filter()` for search
-
----
-
-## ✅ Project Requirements Checklist
-
-- [x] Uses HTML, CSS, and JS
-- [x] Data source is JSON Server (`db.json`)
-- [x] At least 5 employee objects with 3+ attributes
-- [x] All interactions are asynchronous using fetch
-- [x] JSON format only, no API keys
-- [x] Single Page App (no redirects)
-- [x] ≥ 3 Event Listeners
-- [x] ≥ 1 Array iteration method
-- [x] DRY code with reusable functions
-
----
 
 ## Author
+Birundu Gloria
 
-Birundu Gloria.
+📃 License
+MIT License.
+© 2025 Belani Manufacturers – All rights reserved.
 
-##  License
-
-This project is open-source and available under the MIT License.
