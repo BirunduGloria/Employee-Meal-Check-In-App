@@ -1,14 +1,16 @@
 # 🍽️ Belani Meal Check-In App
 
-> A simple, single-page web application that allows employees at **Belani Manufacturers** to check in for meals and enables admins to manage employee data.
+A simple, single-page web application that allows employees at Belani Manufacturers to check in for meals and enables admins to manage employee data.
 
 ---
 
 ## 🧩 Project Overview
 
-This project is built as part of Phase 1 of a software development. It uses HTML, CSS, and JavaScript to build a SPA (Single Page Application) that interacts with a RESTful API to manage employee meal check-ins.
+This project is built as part of Phase 1 of a software development curriculum. It uses HTML, CSS, and JavaScript to build a SPA (Single Page Application) that interacts with a RESTful API to manage employee meal check-ins.
 
-### ✨ Features
+---
+
+## ✨ Features
 
 - ✅ Employee login using SAP Number and PIN  
 - 🕑 Time-based meal check-in (Lunch: 10–14, Dinner: 17–21)  
@@ -22,8 +24,8 @@ This project is built as part of Phase 1 of a software development. It uses HTML
 
 ## 🚀 Live Demo
 
-- 🔗 [Live App on GitHub Pages](https://birundugloria.github.io/Employee-Meal-Check-In-App/)  
-- 🌐 [JSON Server on Render](https://json-server-4866.onrender.com/employees)
+- 🔗 **Live App on GitHub Pages**  
+- 🌐 **JSON Server on Render**  
 
 ---
 
@@ -34,44 +36,47 @@ This project is built as part of Phase 1 of a software development. It uses HTML
 ```bash
 git clone https://github.com/BirunduGloria/Employee-Meal-Check-In-App.git
 cd employee-meal-check-in-app
+```
 
 ### 2. Serve the App
-Just open index.html in your browser.
+
+Simply open `index.html` in your browser.
+
+---
 
 ## 📂 Project Structure
-pgsql
-Copy
-Edit
+
+```
 ├── index.html
 ├── css/
 │   └── style.css
 ├── src/
 │   └── index.js
 ├── README.md
-└── db.json 
+└── db.json
+```
 
+---
 
-✅ Rubric Highlights
-✅ Single Page Application (SPA)
+## ✅ Rubric Highlights
 
-✅ Uses public API (JSON Server hosted on Render)
+- ✅ Single Page Application (SPA)  
+- ✅ Uses public API (JSON Server hosted on Render)  
+- ✅ Three+ Event Listeners (click, DOMContentLoaded, submit)  
+- ✅ No redirects or page reloads  
+- ✅ Includes admin-only features  
+- ✅ Well-structured, polished UI and code  
+- ✅ Clear, valid HTML/CSS/JS  
 
-✅ Three+ Event Listeners (click, DOMContentLoaded, submit)
+---
 
-✅ No redirects or page reloads
+## 👩🏽‍💻 Author
 
-✅ Includes admin-only features
+**Birundu Gloria**
 
-✅ Well-structured, polished UI and code
+---
 
-✅ Clear, valid HTML/CSS/JS
+## 📃 License
 
-
-
-## Author
-Birundu Gloria
-
-📃 License
-MIT License.
+MIT License.  
 © 2025 Belani Manufacturers – All rights reserved.
-
