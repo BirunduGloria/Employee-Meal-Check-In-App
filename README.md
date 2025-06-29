@@ -78,3 +78,6 @@ Simply open `index.html` in your browser.
 
 ## 📃 License
 
+MIT License.  
+© 2025 Belani Manufacturers – All rights reserved.
+
