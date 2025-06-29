@@ -1,6 +1,7 @@
 body {
-  background: linear-gradient(to right, #e0eafc, #cfdef3); /* soft blue gradient */
-  padding: 2rem;
+  background: 
+    linear-gradient(to right, rgba(224, 234, 252, 0.85), rgba(207, 222, 243, 0.85)),
+    url('https://cdn.pixabay.com/photo/2023/03/06/13/58/logo-7833520_1280.png'); /* Replace with actual image URL */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,7 +9,6 @@ body {
   color: red;
   margin: 0;
   min-height: 100vh;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,26 +22,29 @@ header {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
 }
 
 .app-title {
   margin-top: 10px;
   font-size: 1.8rem;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
 .panel {
-  background-color:blue(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   margin: 20px;
   border-radius: 12px;
   width: 90%;
   max-width: 500px;
-  box-shadow: 0 0 10px ;blue(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
-input, select, button {
+input,
+select,
+button {
   display: block;
   width: 100%;
   margin: 10px 0;
@@ -56,7 +59,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button: hover {
   background-color: #2e066f;
 }
 
