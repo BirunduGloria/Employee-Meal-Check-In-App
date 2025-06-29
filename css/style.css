@@ -1,10 +1,11 @@
 body {
   background: 
     linear-gradient(to right, rgba(224, 234, 252, 0.85), rgba(207, 222, 243, 0.85)),
-    url('https://cdn.pixabay.com/photo/2023/03/06/13/58/logo-7833520_1280.png'); /* Replace with actual image URL */
+    url('../images/background.jpg'); /* Update with your correct image path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: 'Segoe UI', sans-serif;
   color: red;
   margin: 0;
@@ -59,7 +60,7 @@ button {
   cursor: pointer;
 }
 
-button: hover {
+button:hover {
   background-color: #2e066f;
 }
 
